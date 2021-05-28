@@ -1,6 +1,10 @@
 import React from "react";
 import Search from "../components/Search";
 import Icons from "../components/Icons";
+import { connect } from "react-redux";
+
+const mapStateToProps = (state) => state;
+
 const MainPage = () => {
   return (
     <div className="container">
@@ -11,4 +15,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default connect(mapStateToProps)(MainPage);

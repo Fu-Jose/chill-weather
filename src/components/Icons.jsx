@@ -1,7 +1,11 @@
 import React from "react";
+import { connect } from "react-redux";
 
-const Icons = () => {
-  return <div>HERE I ILL PUT ICONS</div>;
-};
+const mapStateToProps = (state) => state;
+class Icons extends React.Component {
+  render() {
+    return <div>CNN</div>;
+  }
+}
 
-export default Icons;
+export default connect(mapStateToProps)(Icons);
